@@ -1,0 +1,7 @@
+set -e
+
+if git diff --name-only HEAD@{1} HEAD | grep --silent '^bun\.lockb'; then
+  echo "📦 bun.lockb was changed."
+  echo "Running bun install to update your dependencies..."
+  bun install
+fi
