@@ -1,9 +1,9 @@
 {
-  "name": "typescript-nextjs-starter",
-  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "name": "mark-to-market",
+  "description": "A simple app to calculate the mark-to-market of a financial asset",
   "version": "1.0.0",
   "private": true,
-  "author": "Maquinaweb <arte@maquinaweb.com.br> (@maquinaweb)",
+  "author": "Samuel Pereira da SIlva <samuel@etec.sp.gov.br> (@SMCodesP)",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -19,9 +19,25 @@
     ]
   },
   "dependencies": {
+    "@hookform/resolvers": "^4.1.0",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-popover": "^1.1.6",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@radix-ui/react-tooltip": "^1.1.8",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "lucide-react": "^0.475.0",
     "next": "15.1.6",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-day-picker": "9.5.0",
+    "react-dom": "19.0.0",
+    "react-hook-form": "^7.54.2",
+    "tailwind-merge": "^3.0.1",
+    "tailwindcss-animate": "^1.0.7",
+    "use-mask-input": "^3.4.2",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
@@ -30,8 +46,11 @@
     "@types/node": "22.13.1",
     "@types/react": "19.0.8",
     "@types/react-dom": "19.0.3",
+    "autoprefixer": "^10.4.20",
     "husky": "9.1.7",
     "lint-staged": "15.4.3",
+    "postcss": "^8.5.2",
+    "tailwindcss": "3",
     "typescript": "5.7.3"
   }
 }
