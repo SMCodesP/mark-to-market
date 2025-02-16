@@ -22,10 +22,10 @@ const InputDateField: React.FC<
     let day = parts[0];
     let month = parts[1];
     if (Number(day) > 31) {
-      parts[0] = day.slice(0, 1).padStart(2, '0');
+      parts[0] = (day || '')?.slice(0, 1).padStart(2, '0');
     }
     if (Number(month) > 12) {
-      parts[1] = month.slice(0, 1).padStart(2, '0');
+      parts[1] = (month || '').slice(0, 1).padStart(2, '0');
     }
 
     const newValue = parts.join('/');
