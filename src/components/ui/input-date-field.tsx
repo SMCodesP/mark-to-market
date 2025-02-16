@@ -25,7 +25,7 @@ const InputDateField: React.FC<
       parts[0] = (day || '')?.slice(0, 1).padStart(2, '0');
     }
     if (Number(month) > 12) {
-      parts[1] = (month || '').slice(0, 1).padStart(2, '0');
+      parts[1] = (month || '')?.slice(0, 1).padStart(2, '0');
     }
 
     const newValue = parts.join('/');
